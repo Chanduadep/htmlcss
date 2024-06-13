@@ -3,26 +3,26 @@
     <head>
         <title>Resume</title>
         <style>
-            .bor{
+            table,th,td{
                 border: 2px solid black;
-                
+                border-collapse: collapse;
+
             }
+                
             .bac{
                 background-color: grey;
             }
-             #table1
-            {
-                border-collapse: collapse;
-                border: 2px solid black;
-            } 
+            table{
+            font-size: small;
+            }
         </style>
     </head>
     <body>
         <h3>My Resume</h3>
-        <img src="./../images/image.jpeg" width="60" height="60" alt="profile pic"/>
+        <img src="./../images/image.jpeg" width="60" height="60" alt="profile pic"/><hr/>
         
         <h3>Personal Details:</h3>
-        <table class="bor ">
+        <!-- <table >
             <tr>
                 <td><b>Name:</b></td>
                 <td>Adep Chandana Ramprasad</td>
@@ -39,9 +39,15 @@
                 <td><b>Phone No:</b></td>
                 <td>7038723994</td>
             </tr>
-        </table>
+        </table> -->
+        <ul style="list-style-type:circle;">
+            <li>Name:Adep Chandana Ramprasad</li>
+            <li>Address:3rd floor Jamuna Nivas building Near Vittal Mandir Brahman ali Road,Bhiwandi</li>
+            <li>Email:adepchandu@gmail.com</li>
+            <li>Phone no:7038723994</li>
+        </ul><hr/>
         <h3>Education:</h3>
-        <table class="bor "  id="table1">
+        <table >
             <thead class="bac">
                 <th>Sr.No</th>
                 <th>College/school</th>
@@ -72,9 +78,9 @@
                     <td>78.40</td>
                 </tr>
             </tbody>
-        </table>
+        </table><hr/>
         <h3>Project:</h3>
-        <table class="bor">
+        <table >
             <thead class="bac">
                 <th>Sr.No</th>
                 <th>Project Name</th>
@@ -91,8 +97,8 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
-        <h3>Skills</h3>
+        </table><hr/>
+        <h3>Skills:</h3>
         <ol>
             <li>HTML</li>
             <li>CSS</li>
