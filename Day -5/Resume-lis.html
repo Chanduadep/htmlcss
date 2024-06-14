@@ -9,17 +9,20 @@
 
             }
                 
-            .bac{
+            #bac{
                 background-color: grey;
             }
             table{
             font-size: small;
             }
+            .font-size{
+                font-size: small;
+            }
         </style>
     </head>
     <body>
         <h3>My Resume</h3>
-        <img src="./../images/image.jpeg" width="60" height="60" alt="profile pic"/><hr/>
+        <img src="./../images/image.jpeg" width="60" height="60" alt="profile pic"/>
         
         <h3>Personal Details:</h3>
         <!-- <table >
@@ -40,15 +43,15 @@
                 <td>7038723994</td>
             </tr>
         </table> -->
-        <ul style="list-style-type:circle;">
+        <ul style="list-style-type:circle; " class="font-size">
             <li>Name:Adep Chandana Ramprasad</li>
             <li>Address:3rd floor Jamuna Nivas building Near Vittal Mandir Brahman ali Road,Bhiwandi</li>
             <li>Email:adepchandu@gmail.com</li>
             <li>Phone no:7038723994</li>
-        </ul><hr/>
+        </ul>
         <h3>Education:</h3>
         <table >
-            <thead class="bac">
+            <thead Id="bac">
                 <th>Sr.No</th>
                 <th>College/school</th>
                 <th>Qualification</th>
@@ -78,9 +81,9 @@
                     <td>78.40</td>
                 </tr>
             </tbody>
-        </table><hr/>
+        </table>
         <h3>Project:</h3>
-        <table >
+        <!-- <table >
             <thead class="bac">
                 <th>Sr.No</th>
                 <th>Project Name</th>
@@ -97,9 +100,19 @@
                     </td>
                 </tr>
             </tbody>
-        </table><hr/>
+        </table> -->
+        <dl class="font-size">
+            <dt><b> Name:</b></dt>
+            <dd>Expense Tracker</dd>
+            <dt><b>Technologies Used:</b></dt>
+            <dd>HTML,CSS,PHP,SQL</dd>
+            <dt><b>Description:</b></dt>
+            <dd>This is a website which is used for recording all your expenditures so you have a clear
+                and detailed understanding of your budget.</dd>
+            
+        </dl>
         <h3>Skills:</h3>
-        <ol>
+        <ol class="font-size">
             <li>HTML</li>
             <li>CSS</li>
             <li>SQL</li>
