@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+          * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+        #navbar{
+            height: 60px;
+            color: white;
+            display: flex;
+            background-color: #131921;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #leftDiv{
+            display: flex;
+            width: 26%;
+            height: 80%;
+            justify-content: space-evenly;
+        }
+        #logoDiv{
+            width: 36%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #logoDiv:hover {
+        border: 1px solid white;
+        border-radius: 2px;
+      }
+        #addressDiv{
+            width: 58%;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+        }
+        #addressDiv:hover {
+        border: 1px solid white;
+        border-radius: 2px;
+      }
+        #addressP{
+            font-size: 12px;
+            font-weight: 500;
+            color: #c6c4c7;
+        }
+        
+        #centerDiv{
+            width: 43%;
+         
+            display:flex;
+            height: 65%;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid white;
+            
+        }
+        #allsec{
+            width: 8%;
+            background-color: #e6e6e6;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            
+        }
+        #allsecp{
+            color: #666666;
+        }
+        #inputcol{
+           height: 95%;
+           width: 100%;
+           background-color: white;
+           
+           
+           
+        }
+        #centerDiv:hover{
+            border: 2px solid orange;
+        }
+       
+        #icon{
+            width: 7%;
+            height: 100%;
+            background-color: #febd69;
+            justify-content: center;
+            align-items: center;
+        }
+        #rightDiv{
+            width: 29%;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="leftDiv">
+            <div id="logoDiv">
+                <img  style="height: 78%; width: 84%;
+                " src="./Amazon-India-Logo-PNG-White-removebg-preview.png"
+                alt="Amazon"/>
+
+            </div>
+            <div id="addressDiv">
+                <span class="material-symbols-outlined">location_on</span>
+                <div>
+                    <p id="addressP">Delivering to Bhiwandi 421308</p>
+                <h5>Update location</h5>
+                </div> 
+            </div>
+        </div>
+        <div id="centerDiv">
+            <div id="allsec">
+                <p id="allsecp">All</p>
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                    </span>
+
+            </div>
+            <div id="inputcol">
+                <input size=67 style="border-style: none; padding-top: 10px; padding-left: 8px; padding-bottom: 10px;" type="text" placeholder="Search Amazon.in">
+
+            </div>
+            <div id="icon">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                
+            </div>
+
+        </div>
+        <div id="rightDiv">
+            <p>Profile</p>
+        </div>
+    </div>
+</body>
+</html>
