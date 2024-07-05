@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 2px solid green;
+        }
+        .child{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid palevioletred;
+        }
+        /* @media screen and (min-width:400px){
+            #parent{
+                border: 1px solid darkblue;
+            }
+        }
+        @media screen and (max-width:400px){
+            #parent{
+                border: 1px solid yellow;
+            }
+        } */
+        @media screen and (min-width:350px) and (max-width:750px){
+            #parent{
+                border: 1px solid plum;
+            }
+        }
+        @media screen and (min-width:751px) and (max-width:1150px){
+            #parent{
+                border: 1px solid indianred;
+            }
+        }
+        @media screen and (min-width:1151px) and (max-width:1550px){
+            #parent{
+                border: 1px solid hotpink;
+            }
+        }
+        @media screen and (min-width:1551px){
+            #parent{
+                border: 1px solid lemonchiffon;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+
+    </div>
+</body>
+</html>
