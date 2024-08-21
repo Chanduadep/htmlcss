@@ -291,16 +291,24 @@
             background-color: white;
             margin-top: 30px;
             padding-top: 20px;
+            /* flex-direction: column; */
             /* padding-bottom: 10px; */
             /* border-bottom: 1px solid rgb(221, 221, 221) */
         }
-        .shop{
+
+        
+
+        /* #firstdiv{
+            background-color: white;
+        } */
+        .shop {
             padding-left: 20px;
         }
-        .price{
-            padding-left: 930px; 
+
+        .price {
+            padding-left: 930px;
             font-size: 14px;
-            border-bottom: 1px solid rgb(231,231,231);
+            border-bottom: 1px solid rgb(231, 231, 231);
         }
 
         .pcolor {
@@ -309,35 +317,38 @@
             padding-top: 10px;
             padding-left: 20px;
         }
-         .cart-imgs{
+
+        .cart-imgs {
             /* padding-top: 20px;  */
-           
-        } 
+
+        }
 
         .img-1st {
             display: flex;
-            border-bottom: 1px solid rgb(231,231,231);
+            border-bottom: 1px solid rgb(231, 231, 231);
             padding-top: 25px;
             padding-bottom: 20px;
-             
+
         }
-        .spancheck span{
+
+        .spancheck span {
             /* align-items: center;
             justify-content: center; */
             padding-left: 25px;
             padding-right: 10px;
-            color: rgb(0,113,133);
-           
+            color: rgb(0, 113, 133);
+
         }
-      
+
 
         .cart-info {
             flex-direction: column;
             margin-left: 10px;
         }
-        .rupees{
+
+        .rupees {
             padding-left: 200px;
-          
+
         }
 
         .cart-info p:nth-child(2) {
@@ -346,14 +357,16 @@
             padding-bottom: 7px;
             padding-top: 10px;
         }
-        .cart-info label{
+
+        .cart-info label {
             font-size: 12px;
         }
 
         .cart-info p:nth-child(3) {
             font-size: 12px;
         }
-        .cart-info p:last-child{
+
+        .cart-info p:last-child {
             font-size: 12px;
             padding-top: 8px;
         }
@@ -362,39 +375,130 @@
             align-items: center;
             justify-content: center;
         }
-        .butn{
+
+        .butn {
             display: flex;
             align-items: center;
-            
+
         }
-        .butn p:nth-child(2){
-            color:rgb(0, 160, 208) ;
+
+        .butn p:nth-child(2) {
+            color: rgb(0, 160, 208);
             font-size: 12px;
         }
-        .butn p:nth-child(3){
-            color:rgb(0, 160, 208) ;
+
+        .butn p:nth-child(3) {
+            color: rgb(0, 160, 208);
             font-size: 12px;
         }
-        .butn p:nth-child(4){
-            color:rgb(0, 160, 208) ;
+
+        .butn p:nth-child(4) {
+            color: rgb(0, 160, 208);
             font-size: 12px;
         }
-        .butn p:nth-child(5){
-            color:rgb(0, 160, 208) ;
+
+        .butn p:nth-child(5) {
+            color: rgb(0, 160, 208);
             font-size: 12px;
         }
+
         .buttn {
             display: flex;
         }
-        .total{
+
+        .total {
             padding-left: 750px;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
             padding-top: 5px;
         }
 
         .seconddiv {
             width: 22%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+        }
+
+        .range-total {
+            padding-left: 30px;
+            background-color: white;
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+
+        .check {
+            width: 75%;
+            margin-right: 20px;
+            margin-top: 15px;
+
+        }
+
+        .range-total span {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pclass {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .btncolor {
+            background-color: rgb(255, 216, 20);
+            border-radius: 20px;
+            width: 250px;
+            border: none;
+            padding: 8px 20px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        .selectcol {
+            width: 250px;
+            padding: 14px 18px;
+            margin-bottom: 40px;
+        }
+
+        .paircart {
+            /* border: 1px solid black; */
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .pairimg {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .pairimg img {
+            height: 100px;
+        }
+
+        .star p {
+            font-size: 12px;
+            color: rgb(0, 160, 208);
+        }
+
+        .star {
+            flex-direction: column;
+        }
+
+        #addtocart {
+            border-radius: 5px;
+            background-color: rgb(255, 216, 20);
+            border: none;
+            height: 20px;
+            width: 80px;
+            color: rgb(49, 47, 47);
+        }
+
+        .ratings {
+            color: rgb(0, 160, 208);
+        }
+
+        .rupecol {
+            color: rgb(182, 83, 69);
         }
     </style>
 </head>
@@ -501,113 +605,233 @@
 
     </div>
     <div class="addtocart">
-        <div class="firstdiv">
-            <h2 class="shop">Shopping Cart</h2>
-            <div class="pcolor">
-                <p>Deselect all items</p>
-            </div>
-            <span class="price" >Price</span>
-            <div class="cart-imgs">
-                <div class="img-1st">
-                    <div class="spancheck">
-                    <span class="material-symbols-outlined">
-                        check_box
-                        </span>
-                    </div>
-                    <img src="https://m.media-amazon.com/images/I/71celDOo2LL._AC_AA180_.jpg" alt="vase" />
-                    <div class="cart-info">
-                        <p>Market99 Pink Ceramic Vase - Engraved Floral Pattern, Flower<span class="rupees">  1,012.00</span> Holder | Vase for Flower Pot,
-                            Gift, Home Decor, Bedroom, Office, Li…
-                        </p>
-                        <p>In stock</p>
-                        <p>Eligible for FREE Shipping</p>
-                        <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-                            alt="fulfilled" style="padding-top: 4px;" /><br>
-                        <input type="checkbox" />
-                        <label>This will be a gift <span>Learn more</span></label>
-                        <p>Colour:<span>Pink-4</span></p>
-                        <div class="butn">
-                            <button class="buttn">
-                                <p>Qty : 1 </p><span class="material-symbols-outlined">
-                                    arrow_drop_down
-                                </span>
-                            </button>
-                            <p> | Delete  |</p>
-                            <p> Save for later  |</p>
-                            <p> See more like this  |</p>
-                            <p> Share</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-1st">
-                    <div class="spancheck">
-                    <span class="material-symbols-outlined">
-                        check_box
-                        </span>
-                    </div>
-                    <img src="https://m.media-amazon.com/images/I/71hNjwzeXUL._AC_AA180_.jpg" alt="washing machine" />
-                    <div class="cart-info">
-                        <p>LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading<span class="rupees"> 18,990.00</span>  Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Displa…
 
-                        </p>
-                        <p>In stock</p>
-                        <p>Eligible for FREE Shipping</p>
-                        <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-                            alt="fulfilled" style="padding-top: 4px;" /><br>
-                        <input type="checkbox" />
-                        <label>This will be a gift <span>Learn more</span></label>
-                        <p>Style Name:<span>Capacity:8kg</span></p>
-                        <div class="butn">
-                            <button class="buttn">
-                                <p>Qty : 1 </p><span class="material-symbols-outlined">
-                                    arrow_drop_down
-                                </span>
-                            </button>
-                            <p> | Delete  |</p>
-                            <p> Save for later  |</p>
-                            <p> See more like this  |</p>
-                            <p> Share</p>
+        <div class="firstdiv">
+           
+                <h2 class="shop">Shopping Cart</h2>
+                <div class="pcolor">
+                    <p>Deselect all items</p>
+                </div>
+                <span class="price">Price</span>
+                <div class="cart-imgs">
+                    <div class="img-1st">
+                        <div class="spancheck">
+                            <span class="material-symbols-outlined">
+                                check_box
+                            </span>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/I/71celDOo2LL._AC_AA180_.jpg" alt="vase" />
+                        <div class="cart-info">
+                            <p>Market99 Pink Ceramic Vase - Engraved Floral Pattern, Flower<span class="rupees"> ₹
+                                    1,012.00</span> Holder | Vase for Flower Pot,
+                                Gift, Home Decor, Bedroom, Office, Li…
+                            </p>
+                            <p>In stock</p>
+                            <p>Eligible for FREE Shipping</p>
+                            <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                                alt="fulfilled" style="padding-top: 4px;" /><br>
+                            <input type="checkbox" />
+                            <label>This will be a gift <span>Learn more</span></label>
+                            <p>Colour:<span>Pink-4</span></p>
+                            <div class="butn">
+                                <button class="buttn">
+                                    <p>Qty : 1 </p><span class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span>
+                                </button>
+                                <p> | Delete |</p>
+                                <p> Save for later |</p>
+                                <p> See more like this |</p>
+                                <p> Share</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="img-1st">
-                    <div class="spancheck">
-                    <span class="material-symbols-outlined">
-                        check_box
-                        </span>
-                    </div>
-                    <img src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_AA180_.jpg" alt="fridge" />
-                    <div class="cart-info">
-                        <p>Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door<span class="rupees"> 16,790.00</span>  Refrigerator (RR20C1824CR/HL, Red, Camellia Purple, Base Stand…
-                        </p>
-                        <p>In stock</p>
-                        <p>Eligible for FREE Shipping</p>
-                        <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-                            alt="fulfilled" style="padding-top: 4px;"/><br>
-                        <input type="checkbox" />
-                        <label>This will be a gift <span>Learn more</span></label>
-                        <p>Colour:<span>Red-2024</span></p>
-                        <div class="butn">
-                            <button class="buttn">
-                                <p>Qty : 1 </p><span class="material-symbols-outlined">
-                                    arrow_drop_down
-                                </span>
-                            </button>
-                            <p> | Delete  |</p>
-                            <p> Save for later  |</p>
-                            <p> See more like this  |</p>
-                            <p> Share</p>
+                    <div class="img-1st">
+                        <div class="spancheck">
+                            <span class="material-symbols-outlined">
+                                check_box
+                            </span>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/I/71hNjwzeXUL._AC_AA180_.jpg"
+                            alt="washing machine" />
+                        <div class="cart-info">
+                            <p>LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading<span class="rupees"> ₹
+                                    18,990.00</span> Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Displa…
+
+                            </p>
+                            <p>In stock</p>
+                            <p>Eligible for FREE Shipping</p>
+                            <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                                alt="fulfilled" style="padding-top: 4px;" /><br>
+                            <input type="checkbox" />
+                            <label>This will be a gift <span>Learn more</span></label>
+                            <p>Style Name:<span>Capacity:8kg</span></p>
+                            <div class="butn">
+                                <button class="buttn">
+                                    <p>Qty : 1 </p><span class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span>
+                                </button>
+                                <p> | Delete |</p>
+                                <p> Save for later |</p>
+                                <p> See more like this |</p>
+                                <p> Share</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="total">
-                    <p>Subtotal (3 items):  <b> 36,792.00</b></p>
-                </div>
+                    <div class="img-1st">
+                        <div class="spancheck">
+                            <span class="material-symbols-outlined">
+                                check_box
+                            </span>
+                        </div>
+                        <img src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_AA180_.jpg" alt="fridge" />
+                        <div class="cart-info">
+                            <p>Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door<span class="rupees">₹
+                                    16,790.00</span> Refrigerator (RR20C1824CR/HL, Red, Camellia Purple, Base Stand…
+                            </p>
+                            <p>In stock</p>
+                            <p>Eligible for FREE Shipping</p>
+                            <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                                alt="fulfilled" style="padding-top: 4px;" /><br>
+                            <input type="checkbox" />
+                            <label>This will be a gift <span>Learn more</span></label>
+                            <p>Colour:<span>Red-2024</span></p>
+                            <div class="butn">
+                                <button class="buttn">
+                                    <p>Qty : 1 </p><span class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span>
+                                </button>
+                                <p> | Delete |</p>
+                                <p> Save for later |</p>
+                                <p> See more like this |</p>
+                                <p> Share</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <p>Subtotal (3 items): <b>₹36,792.00</b></p>
+                    </div>
             </div>
         </div>
-        
+
         <div class="seconddiv">
-            <p>hello</p>
+            <div class="range-total">
+                <input class="check" type="range" min="1" max="1000" /><span>₹499</span><br>
+
+                <span class="material-symbols-outlined">
+                    check_circle
+                </span><span>Your order is eligible for FREE Delivery. Choose FREE Delivery option at checkout.</span>
+                <p class="pclass">Subtotal (3 items): <b>₹36,792.00</b></p>
+                <input type="checkbox" />
+                <label>This order contains a gift </label>
+                <button class="btncolor">Proceed to Buy</button>
+                <select class="selectcol">
+                    <option>EMI Abailable</option>
+                </select>
+            </div>
+            <div class="paircart">
+                <h3>Pair with your cart</h3>
+                <div class="pairimg">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71o4XEEvEVL._AC_UL200_SR200,200_.jpg"
+                        alt="washing" />
+                    <div class="star">
+                        <p>LG 7 Kg 5 Star Wind Jet Dry Semi-Automatic...</p>
+                        <span style="align-items: center; display: flex">
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span><span class="ratings">5,849</span>
+
+                        </span>
+                        <span class="rupecol">₹11,490.00</span><br>
+                        <button id="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="pairimg">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71DL6e0+oML._AC_UL200_SR200,200_.jpg"
+                        alt="arti plant" />
+                    <div class="star">
+                        <p>Market99 Artificial Greenery Plastic...</p>
+                        <span style="align-items: center; display: flex">
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span><span class="ratings">3</span>
+
+                        </span>
+                        <span class="rupecol">₹875</span><br>
+                        <button id="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="pairimg">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61uaXBWonVL._AC_UL200_SR200,200_.jpg"
+                        alt="arti plant" />
+                    <div class="star">
+                        <p>Fluffy Pampas Grass</p>
+                        <span style="align-items: center; display: flex">
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span><span class="ratings">5</span>
+
+                        </span>
+                        <span class="rupecol">1 offer from ₹699</span><br>
+                        <button id="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="pairimg">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61XGJ8HMVlL._AC_UL200_SR200,200_.jpg"
+                        alt="arti plant" />
+                    <div class="star">
+                        <p>Market99 Stylish White Artificial Flowers with Pot...
+                        </p>
+                        <!-- <span style="align-items: center; display: flex">
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span><span class="ratings">5</span>
+
+                        </span> -->
+                        <span class="rupecol">₹764</span><br>
+                        <button id="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="pairimg">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61cAuBujp-L._AC_UL200_SR200,200_.jpg"
+                        alt="arti plant" />
+                    <div class="star">
+                        <p>Market99 Iron 3 Lotus Mercury Votive |for...</p>
+                        <span style="align-items: center; display: flex">
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span>
+                            <span class="material-symbols-outlined"> star </span><span class="ratings">1</span>
+
+                        </span>
+                        <span class="rupecol">onlt to left in ₹879.00</span><br>
+                        <button id="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="pairimg">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71izFV2R7+L._AC_UL200_SR200,200_.jpg"
+                        alt="glass candle" />
+                    <div class="star">
+                        <p>Market99 Lily Scented Candle | Eco-Friendly...</p>
+
+                        <span class="rupecol">₹499.00</span><br>
+                        <button id="addtocart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
