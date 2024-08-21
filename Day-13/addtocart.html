@@ -291,12 +291,11 @@
             background-color: white;
             margin-top: 30px;
             padding-top: 20px;
+            margin-bottom: 40px;
             /* flex-direction: column; */
             /* padding-bottom: 10px; */
             /* border-bottom: 1px solid rgb(221, 221, 221) */
         }
-
-        
 
         /* #firstdiv{
             background-color: white;
@@ -415,6 +414,7 @@
         .seconddiv {
             width: 22%;
             /* border: 1px solid black; */
+            margin-bottom: 40px;
         }
 
         .range-total {
@@ -499,6 +499,44 @@
 
         .rupecol {
             color: rgb(182, 83, 69);
+        }
+
+        .product-cart {
+            background-color: rgb(234, 237, 237);
+
+        }
+
+        .products-info {
+            background-color: white;
+            /* border: 1px solid black; */
+            padding-top: 10px;
+        }
+
+        .pflex {
+            display: flex;
+            padding-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .productimg {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .spanbutn{
+            width: 40px;
+            height: 40px;
+            margin-top: 100px;
+            
+        }
+
+        .column {
+            flex-direction: column;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .marketcol{
+            font-size: 14px;
+            color: rgb(0, 160, 208); ;
         }
     </style>
 </head>
@@ -607,112 +645,111 @@
     <div class="addtocart">
 
         <div class="firstdiv">
-           
-                <h2 class="shop">Shopping Cart</h2>
-                <div class="pcolor">
-                    <p>Deselect all items</p>
-                </div>
-                <span class="price">Price</span>
-                <div class="cart-imgs">
-                    <div class="img-1st">
-                        <div class="spancheck">
-                            <span class="material-symbols-outlined">
-                                check_box
-                            </span>
-                        </div>
-                        <img src="https://m.media-amazon.com/images/I/71celDOo2LL._AC_AA180_.jpg" alt="vase" />
-                        <div class="cart-info">
-                            <p>Market99 Pink Ceramic Vase - Engraved Floral Pattern, Flower<span class="rupees"> ₹
-                                    1,012.00</span> Holder | Vase for Flower Pot,
-                                Gift, Home Decor, Bedroom, Office, Li…
-                            </p>
-                            <p>In stock</p>
-                            <p>Eligible for FREE Shipping</p>
-                            <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-                                alt="fulfilled" style="padding-top: 4px;" /><br>
-                            <input type="checkbox" />
-                            <label>This will be a gift <span>Learn more</span></label>
-                            <p>Colour:<span>Pink-4</span></p>
-                            <div class="butn">
-                                <button class="buttn">
-                                    <p>Qty : 1 </p><span class="material-symbols-outlined">
-                                        arrow_drop_down
-                                    </span>
-                                </button>
-                                <p> | Delete |</p>
-                                <p> Save for later |</p>
-                                <p> See more like this |</p>
-                                <p> Share</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-1st">
-                        <div class="spancheck">
-                            <span class="material-symbols-outlined">
-                                check_box
-                            </span>
-                        </div>
-                        <img src="https://m.media-amazon.com/images/I/71hNjwzeXUL._AC_AA180_.jpg"
-                            alt="washing machine" />
-                        <div class="cart-info">
-                            <p>LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading<span class="rupees"> ₹
-                                    18,990.00</span> Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Displa…
 
-                            </p>
-                            <p>In stock</p>
-                            <p>Eligible for FREE Shipping</p>
-                            <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-                                alt="fulfilled" style="padding-top: 4px;" /><br>
-                            <input type="checkbox" />
-                            <label>This will be a gift <span>Learn more</span></label>
-                            <p>Style Name:<span>Capacity:8kg</span></p>
-                            <div class="butn">
-                                <button class="buttn">
-                                    <p>Qty : 1 </p><span class="material-symbols-outlined">
-                                        arrow_drop_down
-                                    </span>
-                                </button>
-                                <p> | Delete |</p>
-                                <p> Save for later |</p>
-                                <p> See more like this |</p>
-                                <p> Share</p>
-                            </div>
+            <h2 class="shop">Shopping Cart</h2>
+            <div class="pcolor">
+                <p>Deselect all items</p>
+            </div>
+            <span class="price">Price</span>
+            <div class="cart-imgs">
+                <div class="img-1st">
+                    <div class="spancheck">
+                        <span class="material-symbols-outlined">
+                            check_box
+                        </span>
+                    </div>
+                    <img src="https://m.media-amazon.com/images/I/71celDOo2LL._AC_AA180_.jpg" alt="vase" />
+                    <div class="cart-info">
+                        <p>Market99 Pink Ceramic Vase - Engraved Floral Pattern, Flower<span class="rupees"> ₹
+                                1,012.00</span> Holder | Vase for Flower Pot,
+                            Gift, Home Decor, Bedroom, Office, Li…
+                        </p>
+                        <p>In stock</p>
+                        <p>Eligible for FREE Shipping</p>
+                        <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                            alt="fulfilled" style="padding-top: 4px;" /><br>
+                        <input type="checkbox" />
+                        <label>This will be a gift <span>Learn more</span></label>
+                        <p>Colour:<span>Pink-4</span></p>
+                        <div class="butn">
+                            <button class="buttn">
+                                <p>Qty : 1 </p><span class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span>
+                            </button>
+                            <p> | Delete |</p>
+                            <p> Save for later |</p>
+                            <p> See more like this |</p>
+                            <p> Share</p>
                         </div>
                     </div>
-                    <div class="img-1st">
-                        <div class="spancheck">
-                            <span class="material-symbols-outlined">
-                                check_box
-                            </span>
-                        </div>
-                        <img src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_AA180_.jpg" alt="fridge" />
-                        <div class="cart-info">
-                            <p>Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door<span class="rupees">₹
-                                    16,790.00</span> Refrigerator (RR20C1824CR/HL, Red, Camellia Purple, Base Stand…
-                            </p>
-                            <p>In stock</p>
-                            <p>Eligible for FREE Shipping</p>
-                            <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-                                alt="fulfilled" style="padding-top: 4px;" /><br>
-                            <input type="checkbox" />
-                            <label>This will be a gift <span>Learn more</span></label>
-                            <p>Colour:<span>Red-2024</span></p>
-                            <div class="butn">
-                                <button class="buttn">
-                                    <p>Qty : 1 </p><span class="material-symbols-outlined">
-                                        arrow_drop_down
-                                    </span>
-                                </button>
-                                <p> | Delete |</p>
-                                <p> Save for later |</p>
-                                <p> See more like this |</p>
-                                <p> Share</p>
-                            </div>
+                </div>
+                <div class="img-1st">
+                    <div class="spancheck">
+                        <span class="material-symbols-outlined">
+                            check_box
+                        </span>
+                    </div>
+                    <img src="https://m.media-amazon.com/images/I/71hNjwzeXUL._AC_AA180_.jpg" alt="washing machine" />
+                    <div class="cart-info">
+                        <p>LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading<span class="rupees"> ₹
+                                18,990.00</span> Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Displa…
+
+                        </p>
+                        <p>In stock</p>
+                        <p>Eligible for FREE Shipping</p>
+                        <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                            alt="fulfilled" style="padding-top: 4px;" /><br>
+                        <input type="checkbox" />
+                        <label>This will be a gift <span>Learn more</span></label>
+                        <p>Style Name:<span>Capacity:8kg</span></p>
+                        <div class="butn">
+                            <button class="buttn">
+                                <p>Qty : 1 </p><span class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span>
+                            </button>
+                            <p> | Delete |</p>
+                            <p> Save for later |</p>
+                            <p> See more like this |</p>
+                            <p> Share</p>
                         </div>
                     </div>
-                    <div class="total">
-                        <p>Subtotal (3 items): <b>₹36,792.00</b></p>
+                </div>
+                <div class="img-1st">
+                    <div class="spancheck">
+                        <span class="material-symbols-outlined">
+                            check_box
+                        </span>
                     </div>
+                    <img src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_AA180_.jpg" alt="fridge" />
+                    <div class="cart-info">
+                        <p>Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door<span class="rupees">₹
+                                16,790.00</span> Refrigerator (RR20C1824CR/HL, Red, Camellia Purple, Base Stand…
+                        </p>
+                        <p>In stock</p>
+                        <p>Eligible for FREE Shipping</p>
+                        <img src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                            alt="fulfilled" style="padding-top: 4px;" /><br>
+                        <input type="checkbox" />
+                        <label>This will be a gift <span>Learn more</span></label>
+                        <p>Colour:<span>Red-2024</span></p>
+                        <div class="butn">
+                            <button class="buttn">
+                                <p>Qty : 1 </p><span class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span>
+                            </button>
+                            <p> | Delete |</p>
+                            <p> Save for later |</p>
+                            <p> See more like this |</p>
+                            <p> Share</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <p>Subtotal (3 items): <b>₹36,792.00</b></p>
+                </div>
             </div>
         </div>
 
@@ -823,7 +860,7 @@
                     <img src="https://images-eu.ssl-images-amazon.com/images/I/71izFV2R7+L._AC_UL200_SR200,200_.jpg"
                         alt="glass candle" />
                     <div class="star">
-                        <p>Market99 Lily Scented Candle | Eco-Friendly...</p>
+                        <p >Market99 Lily Scented Candle | Eco-Friendly...</p>
 
                         <span class="rupecol">₹499.00</span><br>
                         <button id="addtocart">Add to Cart</button>
@@ -834,6 +871,136 @@
 
         </div>
 
+    </div>
+    <div class="product-cart">
+        <div class="products-info">
+            <div class="pflex">
+                <h3>Customers who bought items in your Recent History also bought</h3>
+                <p style="padding-left: 650px;">Page 1 of 4
+                <p>
+            </div>
+            <div class="productimg">
+                <button class="spanbutn"><span class="material-symbols-outlined">
+                    arrow_back_ios_new
+                </span></button>
+                <div class="column">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71szRr-FP5L._AC_UL165_SR165,165_.jpg"
+                        alt="fridge" />
+                    <p class="marketcol">Samsung 189 L, 5 Star... </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">1,098</span>
+
+                    </span>
+                    <p>2K+ viewed in past week</p>
+                    <p>₹18,390.00</p>
+                    <p>Get it by Saturday, August 24<br>
+                        FREE Delivery by Amazon</p>
+                    <button id="addtocart">Add to Cart</button>
+
+                </div>
+                <div class="column">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71BkYX8Rz2L._AC_UL165_SR165,165_.jpg"
+                        alt="fridge" />
+                    <p class="marketcol">LG 185 L 4 Star direct... </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">4,087</span>
+
+                    </span>
+                    <p>200+ viewed in past week</p>
+                    <p>₹16,990.00</p>
+                    <p>Get it by Friday, August 23<br>
+                        FREE Delivery by Amazon</p>
+                    <button id="addtocart">Add to Cart</button>
+
+                </div>
+                <div class="column">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61T5drqfafL._AC_UL165_SR165,165_.jpg"
+                        alt="Tv" />
+                    <p class="marketcol">Mi 108 cm(43 inches) X... </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">23,304</span>
+
+                    </span>
+                    <p>₹25,990.00</p>
+                    <p>Get it by Friday, August 23<br>
+                        FREE Delivery by Amazon</p>
+                    <button id="addtocart">Add to Cart</button>
+
+                </div>
+                <div class="column">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/81gMSU7gueL._AC_UL165_SR165,165_.jpg"
+                        alt="elecpot" />
+                    <p class="marketcol">Everest ABS EPS 50... </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">1,109</span>
+
+                    </span>
+                    <p>100+ viewed in past week</p>
+                    <p>₹1,196.00</p>
+                    <p>Get it by Monday, August 26<br>
+                        FREE Delivery by Amazon</p>
+                    <button id="addtocart">Add to Cart</button>
+
+                </div>
+                <div class="column">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/5155PFA2N+L._AC_UL165_SR165,165_.jpg"
+                        alt="mobile" />
+                    <p class="marketcol">OnePlus Nord CE4 Lite... </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">969</span>
+
+                    </span>
+                    <p>100+ viewed in past week</p>
+                    <p>₹19,990.00</p>
+                    <p>Get it by Friday, August 23<br>
+                        FREE Delivery by Amazon</p>
+                    <button id="addtocart">Add to Cart</button>
+
+                </div>
+                <div class="column">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61wHkeTOhWL._AC_UL165_SR165,165_.jpg"
+                        alt="mobile" />
+                    <p class="marketcol">IQOO Z9x 5G(Tornado)... </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">2,320</span>
+
+                    </span>
+                    
+                    <p>₹14,498.00</p>
+                    <p>Get it by Friday, August 23<br>
+                        FREE Delivery by Amazon</p>
+                    <button id="addtocart">Add to Cart</button>
+
+                </div>
+                <button class="spanbutn"><span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span></button>
+            </div>
+        </div>
     </div>
 </body>
 
