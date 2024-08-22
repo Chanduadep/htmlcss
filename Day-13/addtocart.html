@@ -311,7 +311,7 @@
         }
 
         .pcolor {
-            color: rgb(0, 160, 208);
+            color: #42818d;
             font-size: 14px;
             padding-top: 10px;
             padding-left: 20px;
@@ -329,6 +329,9 @@
             padding-bottom: 20px;
 
         }
+        .sizefont{
+            font-size: 12px;
+        }
 
         .spancheck span {
             /* align-items: center;
@@ -336,6 +339,7 @@
             padding-left: 25px;
             padding-right: 10px;
             color: rgb(0, 113, 133);
+            padding: 70px 20px;
 
         }
 
@@ -378,27 +382,32 @@
         .butn {
             display: flex;
             align-items: center;
-
         }
-
+        
         .butn p:nth-child(2) {
-            color: rgb(0, 160, 208);
+            color: #42818d;
             font-size: 12px;
+            margin-right: 10px;
+            margin-left: 10px;
         }
 
         .butn p:nth-child(3) {
-            color: rgb(0, 160, 208);
+            color: #42818d;
             font-size: 12px;
+            margin-right: 10px;
         }
 
         .butn p:nth-child(4) {
-            color: rgb(0, 160, 208);
+            color: #42818d;
             font-size: 12px;
+            margin-right: 10px;
         }
 
         .butn p:nth-child(5) {
-            color: rgb(0, 160, 208);
+            color: #42818d;
             font-size: 12px;
+            margin-right: 10px;
+            margin-bottom: 8px;
         }
 
         .buttn {
@@ -439,6 +448,10 @@
         .pclass {
             margin-top: 15px;
             margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .size-label{
+            font-size: 12px;
         }
 
         .btncolor {
@@ -477,7 +490,8 @@
 
         .star p {
             font-size: 12px;
-            color: rgb(0, 160, 208);
+            color: #217c8d;
+            font-size: 14px;
         }
 
         .star {
@@ -499,6 +513,7 @@
 
         .rupecol {
             color: rgb(182, 83, 69);
+            font-size: 14px;
         }
 
         .product-cart {
@@ -515,18 +530,22 @@
         .pflex {
             display: flex;
             padding-bottom: 30px;
+            padding-top: 15px;
             padding-left: 20px;
         }
 
         .productimg {
             display: flex;
             justify-content: space-evenly;
+            border-bottom: 1px solid rgb(231, 231, 231);
+            padding-bottom: 10px;
         }
-        .spanbutn{
+
+        .spanbutn {
             width: 40px;
             height: 40px;
             margin-top: 100px;
-            
+
         }
 
         .column {
@@ -534,9 +553,88 @@
             font-size: 12px;
             line-height: 16px;
         }
-        .marketcol{
+
+        .marketcol {
             font-size: 14px;
-            color: rgb(0, 160, 208); ;
+            color: #217c8d;
+            
+        }
+
+        .img-size {
+            height: 160px;
+            
+        }
+
+        .column-flex {
+            display: flex;
+            padding-left: 20px;  
+            
+        }
+        .img-size2 {
+            height: 110px;
+            margin-left: 30px;
+        }
+        /*footer*/
+        .footer{
+           
+        }
+        .footer-nav{
+            margin-top: 40px;
+           background-color: #37475a;
+            /* border: 1px solid black; */
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        .footer-pan{
+            background-color: #232f3e;
+            color: white;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        ul{
+            margin-top: 40px;
+        }
+        ul a{
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 0.85rem;
+            color: #dddddd;
+        }
+        .foot-panel2{
+            background-color: #232f3e;
+            color: white;
+            border-top: 0.5px solid white;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            background-image: url("./Amazon-India-Logo-PNG-White-removebg-preview.png");
+            background-size: cover;
+            height: 35px;
+            width: 120px;
+        }
+        .foot-pan3{
+            background-color: #131921;
+            color: white;
+            height: 80px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            text-align: center;
+            font-size: 0.7rem;
+        }
+        .pages{
+            padding-top: 25px;
+        }
+        .copyright{
+            padding-top: 5px;  
         }
     </style>
 </head>
@@ -670,7 +768,7 @@
                             alt="fulfilled" style="padding-top: 4px;" /><br>
                         <input type="checkbox" />
                         <label>This will be a gift <span>Learn more</span></label>
-                        <p>Colour:<span>Pink-4</span></p>
+                        <p class="sizefont">Colour:<span>Pink-4</span></p>
                         <div class="butn">
                             <button class="buttn">
                                 <p>Qty : 1 </p><span class="material-symbols-outlined">
@@ -702,7 +800,7 @@
                             alt="fulfilled" style="padding-top: 4px;" /><br>
                         <input type="checkbox" />
                         <label>This will be a gift <span>Learn more</span></label>
-                        <p>Style Name:<span>Capacity:8kg</span></p>
+                        <p class="sizefont">Style Name:<span>Capacity:8kg</span></p>
                         <div class="butn">
                             <button class="buttn">
                                 <p>Qty : 1 </p><span class="material-symbols-outlined">
@@ -733,7 +831,7 @@
                             alt="fulfilled" style="padding-top: 4px;" /><br>
                         <input type="checkbox" />
                         <label>This will be a gift <span>Learn more</span></label>
-                        <p>Colour:<span>Red-2024</span></p>
+                        <p class="sizefont">Colour:<span>Red-2024</span></p>
                         <div class="butn">
                             <button class="buttn">
                                 <p>Qty : 1 </p><span class="material-symbols-outlined">
@@ -762,7 +860,7 @@
                 </span><span>Your order is eligible for FREE Delivery. Choose FREE Delivery option at checkout.</span>
                 <p class="pclass">Subtotal (3 items): <b>₹36,792.00</b></p>
                 <input type="checkbox" />
-                <label>This order contains a gift </label>
+                <label class="size-label">This order contains a gift </label>
                 <button class="btncolor">Proceed to Buy</button>
                 <select class="selectcol">
                     <option>EMI Abailable</option>
@@ -860,7 +958,7 @@
                     <img src="https://images-eu.ssl-images-amazon.com/images/I/71izFV2R7+L._AC_UL200_SR200,200_.jpg"
                         alt="glass candle" />
                     <div class="star">
-                        <p >Market99 Lily Scented Candle | Eco-Friendly...</p>
+                        <p>Market99 Lily Scented Candle | Eco-Friendly...</p>
 
                         <span class="rupecol">₹499.00</span><br>
                         <button id="addtocart">Add to Cart</button>
@@ -877,12 +975,12 @@
             <div class="pflex">
                 <h3>Customers who bought items in your Recent History also bought</h3>
                 <p style="padding-left: 650px;">Page 1 of 4
-                <p>
+                </p>
             </div>
             <div class="productimg">
                 <button class="spanbutn"><span class="material-symbols-outlined">
-                    arrow_back_ios_new
-                </span></button>
+                        arrow_back_ios_new
+                    </span></button>
                 <div class="column">
                     <img src="https://images-eu.ssl-images-amazon.com/images/I/71szRr-FP5L._AC_UL165_SR165,165_.jpg"
                         alt="fridge" />
@@ -989,7 +1087,7 @@
                         <span class="material-symbols-outlined"> star </span><span class="ratings">2,320</span>
 
                     </span>
-                    
+
                     <p>₹14,498.00</p>
                     <p>Get it by Friday, August 23<br>
                         FREE Delivery by Amazon</p>
@@ -997,11 +1095,214 @@
 
                 </div>
                 <button class="spanbutn"><span class="material-symbols-outlined">
-                    arrow_forward_ios
+                        arrow_forward_ios
                     </span></button>
             </div>
         </div>
+        <div class="products-info">
+            <div class="pflex">
+                <h3>Recommended based on your shopping trends</h3>
+                <p style="padding-left: 650px;">Page 1 of 4
+                </p>
+            </div>
+            <div class="productimg">
+                <button class="spanbutn"><span class="material-symbols-outlined">
+                        arrow_back_ios_new
+                    </span></button>
+                <div class="column">
+                    <img class="img-size" src="https://m.media-amazon.com/images/I/51hTnOToLNL._AC_SR405%2C405_.jpg"
+                        alt="lipbalm" />
+                    <p class="marketcol">Maybelline New York Lip<br>
+                        Balm, With SPF,<br>
+                        Moisturises and Protects <br>
+                        from the Sun, Pink Lolita<br>
+                        & Baby Lips Cherry Kiss,</p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">25,120</span>
+
+                    </span>
+                    <p>₹129.00</p>
+                </div>
+                <div class="column">
+                    <img class="img-size" src="https://m.media-amazon.com/images/I/61WzHIUkz6L._AC_SR405%2C405_.jpg"
+                        alt="cheek tint" />
+                    <p class="marketcol">Aegte Organics Pink <br>
+                        Rose Petal Lip & Cheek <br>
+                        Tint for Women 100% <br>
+                        Organic & helps lighten <br>
+                    </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">112</span>
+
+                    </span>
+                    <p>₹499.00</p>
+                </div>
+                <div class="column">
+                    <img class="img-size" src="https://m.media-amazon.com/images/I/51ODHyDsk0L._AC_SR405%2C405_.jpg"
+                        alt=" tan cream" />
+                    <p class="marketcol">Kozicare Kojic Acid <br>
+                        Cream | Papaya Cream |<br>
+                        Tan Removal Cream | <br>
+                        Face Cream for Glowing<br>
+                        Skin | Non-Greasy &<br>
+                    </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">185</span>
+
+                    </span>
+                    <p>₹159.00</p>
+
+                </div>
+                <div class="column">
+                    <img class="img-size" src="https://m.media-amazon.com/images/I/61ZpsIP0BTL._AC_SR405%2C405_.jpg"
+                        alt="oil" />
+                    <p class="marketcol">Love Beauty & Planet<br>
+                        Argan Oil and Lavender <br>
+                        Sulfate Free Smooth and<br>
+                        Serene Shampoo|| No<br>
+                        Parabens|| No Dyes||</p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">1,384</span>
+
+                    </span>
+                    <p>₹487.00</p>
+                </div>
+                <div class="column">
+                    <img class="img-size" src="https://m.media-amazon.com/images/I/51GcOHGe3BL._AC_SR405%2C405_.jpg"
+                        alt="lip balm" />
+                    <p class="marketcol">Arata Natural Lip balm<br>
+                        (10 gm) for dry, chapped <br>
+                        lips with Intense<br>
+                        Moisturizing || Power of<br>
+                        Cardamom oil || Cocoa & <br>
+                    </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">3,390</span>
+
+                    </span>
+                    <p>₹199.00</p>
+                </div>
+                <div class="column">
+                    <img class="img-size" src="https://m.media-amazon.com/images/I/81bOwtheKzL._AC_SR405%2C405_.jpg"
+                        alt="Tshirt" />
+                    <p class="marketcol">Amazon Brand - Symbol <br>
+                        Men's Cotton Rich Polo T <br>
+                        Shirt | Classic Collar<br>
+                        Tshirts | Half Sleeves <br>
+                        | Plain-Regular Fit<br>
+                    </p>
+                    <span style="align-items: center; display: flex">
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span><span class="ratings">760</span>
+
+                    </span>
+                    <p>₹449.00</p>
+                </div>
+                <button class="spanbutn"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span></button>
+            </div>
+        </div>
+        <div class="products-info">
+            <div class="pflex">
+                <h3>Your browsing history</h3><span style="margin-top: 5px; color: rgb(0, 160, 208);">View or edit your
+                    browsing history</span>
+            </div>
+            <div class="column-flex">
+                <div class="column">
+                    <img class="img-size2"
+                        src="https://images-eu.ssl-images-amazon.com/images/I/51GcOHGe3BL._AC_UL100_SR100,100_.jpg"
+                        alt="lipbalm" />
+                </div>
+                <div class="column">
+                    <img class="img-size2"
+                        src="https://images-eu.ssl-images-amazon.com/images/I/71DL6e0+oML._AC_UL100_SR100,100_.jpg"
+                        alt="plant" />
+                </div>
+            </div>
+
+        </div>
     </div>
+    <footer>
+        <div class="footer-nav">
+            <p>Back to top</p>
+        </div>
+        <div class="footer-pan">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell on Amazon</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+               <a> Become an Affiliate</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>Amazon Pay on Merchants</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>COVID-19 and Amazon</a>
+                <a>Your Account</a>
+                <a>Returns Centre </a>
+                <a>Recalls and Product Safety Alerts</a>
+               <a> 100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>AHelp</a>
+               
+            </ul>
+        </div>
+        <div class="foot-panel2">
+            <div class="logo">
+    
+            </div>
+        </div>
+        <div class="foot-pan3">
+            <div class="pages">
+                <a>Conditions of use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
