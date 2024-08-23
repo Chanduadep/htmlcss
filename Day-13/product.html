@@ -319,27 +319,123 @@
             display: flex;
         }
 
-        .rightside {
+        .leftside {
             width: 45%;
             border: 1px solid grey;
-
+            display: flex;
+            justify-content: space-evenly;
         }
 
-        #rightimg {
+        #leftimg {
             width: 4%;
+            /* margin-right: 0px; */
             /* border: #232f3e; */
+            margin-top: 40px;
         }
 
-        #rightimg img{
+        .leftside p {
+            padding-top: 0;
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(86, 89, 89);
+            font-weight: 700;
+            /* text-align: center; */
+            line-height: 16px;
+        }
+
+        #leftimg img {
             margin-top: 5px;
             margin-left: 12px;
             border: 1px solid black;
             border-radius: 8px;
         }
 
-        .leftside {
+        .rightimg {
+            width: 60%;
+            border: 1px solid black;
+            min-height: 500px;
+            margin-top: 40px;
+        }
+
+        .rightimg img {
+            width: 90%;
+            /* max-height: 100px; */
+            height: 400px;
+        }
+
+        .rightside {
             width: 55%;
             border: 1px solid grey;
+            display: flex;
+            padding: 0px;
+        }
+
+        .refrig-info {
+            width: 60%;
+            border: 1px solid black;
+        }
+
+        .part1 {
+            border-bottom: 1px solid #939393;
+            padding-left: 3px;
+        }
+
+        .psize1 {
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        .psize {
+            font-size: 12px;
+            color: #939393;
+        }
+
+        .refrig-info span {
+            font-size: 14px;
+            color: #00a0d0;
+        }
+
+        .refrig-info span :nth-child(1) {
+            color: rgb(66, 65, 65);
+            font-size: 14px;
+        }
+
+        .refrig-info span :nth-child(2) {
+            color: #faaa42;
+            font-size: 20px;
+        }
+
+        .refrig-info span :nth-child(3) {
+            color: #faaa42;
+            font-size: 20px;
+        }
+
+        .refrig-info span :nth-child(4) {
+            color: #faaa42;
+            font-size: 20px;
+        }
+
+        .refrig-info span :nth-child(5) {
+            color: #faaa42;
+            font-size: 20px;
+        }
+
+        .refrig-info span :nth-child(6) {
+            color: #faaa42;
+            font-size: 20px;
+        }
+
+        .refrig-info img {
+            height: 35px;
+        }
+
+        .refrig-info-right {
+            width: 40%;
+            border: 1px solid black;
+        }
+
+        .part2 {
+            padding-left: 3px;
         }
     </style>
 
@@ -466,8 +562,11 @@
         <h5>Fully Automatic Top Loading Washing Machines</h5>
     </div>
     <div class="product-parent">
-        <div class="rightside">
-            <div id="rightimg">
+        <div class="leftside">
+            <p>Home & Kitchen>Large <span>Appliances>Refrigerators</span>
+            <p>
+            <div id="leftimg">
+
                 <img src="https://m.media-amazon.com/images/I/31vu6qqnkNL._SX38_SY50_CR,0,0,38,50_.jpg" alt="" />
                 <img src="https://m.media-amazon.com/images/I/51CQbeFho7L._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
                     alt="" />
@@ -479,9 +578,34 @@
                     alt="" />
 
             </div>
+            <div class="rightimg">
+                <img src="https://m.media-amazon.com/images/I/51fBESl4S1L._SX679_.jpg">
+            </div>
+            <span><img src=" https://m.media-amazon.com/images/G/01/share-icons/share-std.svg" /></span>
         </div>
-        <div class="leftside">
-            <p>41HJi8f4KIL</p>
+        <div class="rightside">
+            <div class="refrig-info">
+                <div class="part1">
+                    <p class="psize1">Haier 190L 4-Star Direct Cool Single Door Refrigerator (HED-204DS-P, Dazzle Steel,
+                        2024 Model)</p>
+                    <span>Visit the Haier Store</span>
+                    <span style="align-items: center; display: flex">
+                        <span>4.1</span><span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+                        <span class="material-symbols-outlined"> star </span>
+
+                    </span>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQN8IYDB2uKIO0PjD1jxtPmj894_01unMkA&s" />
+                    <p class="psize">1k+ bought in past months</p>
+                </div>
+                <div class="part2">
+                    <p>-30%<span>₹14,790</span></p>
+                </div>
+            </div>
+            <div class="refrig-info-right"></div>
         </div>
     </div>
 </body>
